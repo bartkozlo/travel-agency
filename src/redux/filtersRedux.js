@@ -1,6 +1,6 @@
 /* SELECTORS */
 
-export const getAllFilters = ({filters}) => filters;
+export const getAllFilters = ({ filters }) => filters;
 
 /* ACTIONS */
 
@@ -31,13 +31,16 @@ export default function reducer(statePart = [], action = {}) {
     case CHANGE_DURATION:
       return {
         ...statePart,
-        duration: {...statePart.duration, [action.payload.type]: action.payload.value},
+        duration: {
+          ...statePart.duration,
+          [action.payload.type]: action.payload.value,
+        },
       };
-      case CHANGE_TAG:
-        return {
-          ...statePart,
-          tags: action.payload,
-        }
+    case CHANGE_TAG:
+      return {
+        ...statePart,
+        tags: action.payload,
+      };
     default:
       return statePart;
   }

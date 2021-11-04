@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import TripSummary from '../../features/TripSummary/TripSummary';
 import Section from '../../layout/Section/Section';
 import PageTitle from '../../common/PageTitle/PageTitle';
-import OrderForm from '../../features/OrderForm/OrderForm';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import TripListOptions from '../../features/TripListOptions/TripListOptionsContainer';
 
