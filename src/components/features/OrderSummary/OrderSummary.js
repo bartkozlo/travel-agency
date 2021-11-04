@@ -1,6 +1,7 @@
 import React from 'react';
-import styles from './OrderSummary.module.scss';
 import PropTypes from 'prop-types';
+
+import styles from './OrderSummary.module.scss';
 import { calculateTotal } from '../../../utils/calculateTotal';
 import { formatPrice } from '../../../utils/formatPrice';
 
