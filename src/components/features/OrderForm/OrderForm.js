@@ -31,10 +31,10 @@ const sendOrder = (tripId, tripName, options, tripCost, countryCode) => {
     body: JSON.stringify(payload),
   };
 
-  // if (tripName.name === '' || tripName.contact === '') {
-  //   alert('Please fill out the missing fields');
-  //   return;
-  // }
+  if (tripName.name === '' || tripName.contact === '') {
+    alert('Please fill out the missing fields');
+    return;
+  }
 
   fetch(url, fetchOptions)
     .then(function (response) {
